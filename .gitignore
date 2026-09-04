@@ -1,0 +1,14 @@
+node_modules/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+coverage/
+.npm-cache/
+.npm-cache-retry/
+.env
+.env.*
+!.env.example
+.undolane-web/
+dist/
+test-results/
+playwright-report/

@@ -1,0 +1,50 @@
+{
+  "name": "undolane-phase1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:web": "playwright test",
+    "dev": "node --env-file-if-exists=.env scripts/dev.ts",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "demo": "node scripts/demo.ts",
+    "mcp": "node packages/mcp-server/stdio.ts",
+    "agent": "node --env-file-if-exists=.env packages/agent/cli.ts",
+    "demo:agent": "node --env-file-if-exists=.env scripts/agent-demo.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@fontsource/dm-sans": "5.3.0",
+    "@fontsource/dm-serif-display": "5.3.0",
+    "@modelcontextprotocol/client": "2.0.0",
+    "@modelcontextprotocol/server": "2.0.0",
+    "better-sqlite3": "13.0.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/better-sqlite3": "9.6.0",
+    "@types/node": "26.4.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "6.1.1",
+    "typescript": "7.0.2",
+    "vite": "8.2.2",
+    "vitest": "5.0.0"
+  }
+}
