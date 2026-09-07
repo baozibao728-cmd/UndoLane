@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10" fill="#467357"/></marker></defs>
+<rect width="1600" height="1200" fill="#f6f5ef"/>
+<g font-family="Arial,sans-serif" fill="#223d2f">
+<text x="80" y="78" font-size="22" letter-spacing="4">UNDOLANE / SYSTEM ARCHITECTURE</text>
+<text x="80" y="143" font-size="48" font-weight="bold">Agent mistake removed. Human work preserved.</text>
+<text x="80" y="185" font-size="23" fill="#627267">Ownership-aware selective undo · Local managed workspace</text>
+<g fill="#fff" stroke="#ccd9cd" stroke-width="2">
+<rect x="100" y="230" width="660" height="76" rx="14"/>
+<rect x="100" y="342" width="660" height="76" rx="14"/>
+<rect x="100" y="454" width="660" height="76" rx="14"/>
+<rect x="100" y="566" width="660" height="76" rx="14"/>
+<rect x="100" y="678" width="660" height="76" rx="14"/>
+<rect x="100" y="790" width="660" height="100" rx="14" fill="#e5efdf"/>
+<rect x="100" y="926" width="660" height="100" rx="14"/>
+</g>
+<g font-size="27" text-anchor="middle">
+<text x="430" y="278">User</text><text x="430" y="390">UndoLane Web App</text>
+<text x="430" y="502">Agent Runner</text><text x="430" y="614">MCP Client</text>
+<text x="430" y="726">MCP Server</text><text x="430" y="832" font-weight="bold">Undo Engine</text>
+<text x="430" y="968">SQLite Event History</text>
+</g>
+<g font-size="18" text-anchor="middle" fill="#627267"><text x="430" y="863">Ownership + revision checks · conditional compensation</text><text x="430" y="998">Current fields + Actions + Effects + compensation records</text></g>
+<g fill="none" stroke="#467357" stroke-width="3" marker-end="url(#arrow)">
+<path d="M430 306V330"/><path d="M430 418V442"/><path d="M430 530V554"/><path d="M430 642V666"/><path d="M430 754V778"/><path d="M430 890V914"/>
+<path d="M100 380H55V840H88" stroke-dasharray="8 6"/>
+</g>
+<text transform="translate(34 732) rotate(-90)" font-size="17">Human edit → local API → Engine</text>
+<rect x="845" y="230" width="675" height="215" rx="16" fill="#fff" stroke="#ccd9cd"/>
+<text x="875" y="273" font-size="22" font-weight="bold">Two provider modes. One write path.</text>
+<text x="875" y="315" font-size="21">Live: configured OpenAI-compatible model</text>
+<text x="875" y="351" font-size="21">Fixture: fixed recipe, no model inference</text>
+<text x="875" y="403" font-size="19" fill="#627267">Both use the existing Runner and real stdio MCP.</text>
+<rect x="845" y="475" width="675" height="270" rx="16" fill="#fff" stroke="#ccd9cd"/>
+<text x="875" y="520" font-size="24" font-weight="bold">What the engine records</text>
+<text x="875" y="566" font-size="21">Action — who performed the operation</text>
+<text x="875" y="609" font-size="21">Effect — field, before / after, previous_effect_id</text>
+<text x="875" y="652" font-size="21">Revision — increases, including on undo</text>
+<text x="875" y="695" font-size="21">active_effect_id — current logical ownership</text>
+<rect x="845" y="775" width="675" height="251" rx="16" fill="#f6e9d8" stroke="#d5af7b"/>
+<text x="875" y="820" font-size="25" font-weight="bold" fill="#955523">Protected Edit: “Hero — Final”</text>
+<text x="875" y="863" font-size="21">A newer Human Action owns the title.</text>
+<text x="875" y="906" font-size="21">Undo restores the eligible campaign only.</text>
+<text x="875" y="951" font-size="19">Preview / Commit: Web API → MCP → Engine</text>
+<text x="875" y="990" font-size="19">Stale plan → reject · Same commit → same receipt</text>
+<text x="80" y="1091" font-size="24" font-weight="bold">Undo is a new compensation operation. Original history stays.</text>
+<text x="80" y="1134" font-size="19" fill="#627267">Event History describes recorded mutations; there is no separate event bus or event-stream service.</text>
+</g></svg>
