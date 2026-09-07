@@ -1,0 +1,911 @@
+{
+  "startedAt": "2026-09-07T18:01:10.754Z",
+  "task": "Prepare approved assets for Autumn Launch",
+  "model": "mimo-v2.5",
+  "previews": [
+    {
+      "undo_plan_id": "9e00f1b8-f31c-440d-bb28-473c35a59fcb",
+      "action_id": "ac27d27d-553a-4020-b88e-01b5aaf361c8",
+      "plan_hash": "1078ac9a355be14e2baee90713a46b60672390a9913fbf5066e93b3c9e56e367",
+      "base_workspace_revision": 10,
+      "expires_at": 1788805000983,
+      "eligible": 1,
+      "protected": 0,
+      "blocked": 0,
+      "already_undone": 0,
+      "unsupported": 0,
+      "items": [
+        {
+          "effect_id": "2b305f21-916e-421b-a36c-cac365546bcb",
+          "resource_id": "asset_b",
+          "field": "campaign",
+          "decision": "eligible",
+          "can_undo": true,
+          "reason": "The target effect owns this field",
+          "current_value": "Autumn Launch",
+          "current_present": true,
+          "revision": 3,
+          "active_effect_id": "2b305f21-916e-421b-a36c-cac365546bcb",
+          "restore_value": null,
+          "restore_present": true,
+          "previous_effect_id": null
+        }
+      ]
+    },
+    {
+      "undo_plan_id": "38603262-8a66-4823-874c-9779d3eb0022",
+      "action_id": "9ad151f7-095c-4a51-a0ad-5e8b516e2847",
+      "plan_hash": "18ceb88a40187f6abb637326983e5c81c175bcc91c90f2746e08056bd0a836e2",
+      "base_workspace_revision": 11,
+      "expires_at": 1788805000998,
+      "eligible": 1,
+      "protected": 0,
+      "blocked": 0,
+      "already_undone": 0,
+      "unsupported": 0,
+      "items": [
+        {
+          "effect_id": "e6620a9f-4009-4d7d-8bc0-0b4c00b63bcb",
+          "resource_id": "asset_a",
+          "field": "campaign",
+          "decision": "eligible",
+          "can_undo": true,
+          "reason": "The target effect owns this field",
+          "current_value": "Autumn Launch",
+          "current_present": true,
+          "revision": 3,
+          "active_effect_id": "e6620a9f-4009-4d7d-8bc0-0b4c00b63bcb",
+          "restore_value": null,
+          "restore_present": true,
+          "previous_effect_id": null
+        }
+      ]
+    }
+  ],
+  "receipts": [
+    {
+      "undo_commit_id": "9713106a-027c-467f-a827-fc041c88ecdc",
+      "undo_plan_id": "9e00f1b8-f31c-440d-bb28-473c35a59fcb",
+      "action_id": "ac27d27d-553a-4020-b88e-01b5aaf361c8",
+      "restored": [
+        "2b305f21-916e-421b-a36c-cac365546bcb"
+      ],
+      "preserved": [],
+      "workspace_revision": 11,
+      "status": "undone"
+    },
+    {
+      "undo_commit_id": "5e742873-b931-4f7f-a5d6-b7c4da4b9379",
+      "undo_plan_id": "38603262-8a66-4823-874c-9779d3eb0022",
+      "action_id": "9ad151f7-095c-4a51-a0ad-5e8b516e2847",
+      "restored": [
+        "e6620a9f-4009-4d7d-8bc0-0b4c00b63bcb"
+      ],
+      "preserved": [],
+      "workspace_revision": 12,
+      "status": "undone"
+    }
+  ],
+  "errors": [],
+  "before": {
+    "assets": [
+      {
+        "resourceId": "asset_a",
+        "fields": {
+          "display_name": {
+            "resourceId": "asset_a",
+            "field": "display_name",
+            "present": true,
+            "value": "Cake 01",
+            "revision": 0,
+            "activeEffectId": null,
+            "lastMutationId": null
+          },
+          "campaign": {
+            "resourceId": "asset_a",
+            "field": "campaign",
+            "present": true,
+            "value": null,
+            "revision": 2,
+            "activeEffectId": null,
+            "lastMutationId": "56022886-ca82-4c94-a731-655550fafa48"
+          },
+          "status": {
+            "resourceId": "asset_a",
+            "field": "status",
+            "present": true,
+            "value": "approved",
+            "revision": 0,
+            "activeEffectId": null,
+            "lastMutationId": null
+          },
+          "note": {
+            "resourceId": "asset_a",
+            "field": "note",
+            "present": true,
+            "value": "",
+            "revision": 0,
+            "activeEffectId": null,
+            "lastMutationId": null
+          }
+        },
+        "recentMutations": {
+          "display_name": null,
+          "campaign": {
+            "kind": "compensation",
+            "id": "56022886-ca82-4c94-a731-655550fafa48",
+            "undoCommitId": "6dea6f90-710a-4105-8014-3e989e96bd09",
+            "effectId": "ba10eac2-b4ae-43cb-9209-55c51f86161f",
+            "beforeRevision": 1,
+            "afterRevision": 2
+          },
+          "status": null,
+          "note": null
+        }
+      },
+      {
+        "resourceId": "asset_b",
+        "fields": {
+          "display_name": {
+            "resourceId": "asset_b",
+            "field": "display_name",
+            "present": true,
+            "value": "Cake 02",
+            "revision": 0,
+            "activeEffectId": null,
+            "lastMutationId": null
+          },
+          "campaign": {
+            "resourceId": "asset_b",
+            "field": "campaign",
+            "present": true,
+            "value": null,
+            "revision": 2,
+            "activeEffectId": null,
+            "lastMutationId": "03fd29a5-fd4d-4a65-8d17-96b33703aea8"
+          },
+          "status": {
+            "resourceId": "asset_b",
+            "field": "status",
+            "present": true,
+            "value": "approved",
+            "revision": 0,
+            "activeEffectId": null,
+            "lastMutationId": null
+          },
+          "note": {
+            "resourceId": "asset_b",
+            "field": "note",
+            "present": true,
+            "value": "",
+            "revision": 0,
+            "activeEffectId": null,
+            "lastMutationId": null
+          }
+        },
+        "recentMutations": {
+          "display_name": null,
+          "campaign": {
+            "kind": "compensation",
+            "id": "03fd29a5-fd4d-4a65-8d17-96b33703aea8",
+            "undoCommitId": "a7717112-c2f4-4187-93b2-4a97f1457f5d",
+            "effectId": "b99858ec-7040-46f4-97a6-9c98f6b8ecca",
+            "beforeRevision": 1,
+            "afterRevision": 2
+          },
+          "status": null,
+          "note": null
+        }
+      },
+      {
+        "resourceId": "asset_c",
+        "fields": {
+          "display_name": {
+            "resourceId": "asset_c",
+            "field": "display_name",
+            "present": true,
+            "value": "Cake 03",
+            "revision": 0,
+            "activeEffectId": null,
+            "lastMutationId": null
+          },
+          "campaign": {
+            "resourceId": "asset_c",
+            "field": "campaign",
+            "present": true,
+            "value": null,
+            "revision": 0,
+            "activeEffectId": null,
+            "lastMutationId": null
+          },
+          "status": {
+            "resourceId": "asset_c",
+            "field": "status",
+            "present": true,
+            "value": "unapproved",
+            "revision": 0,
+            "activeEffectId": null,
+            "lastMutationId": null
+          },
+          "note": {
+            "resourceId": "asset_c",
+            "field": "note",
+            "present": true,
+            "value": "",
+            "revision": 0,
+            "activeEffectId": null,
+            "lastMutationId": null
+          }
+        },
+        "recentMutations": {
+          "display_name": null,
+          "campaign": null,
+          "status": null,
+          "note": null
+        }
+      }
+    ],
+    "revision": 7,
+    "runs": [
+      {
+        "id": "5d68f54c-8cf6-4ddb-847e-b77d9f7d1b9e",
+        "task": "Prepare approved assets for Autumn Launch",
+        "mode": "live",
+        "startedAt": "2026-09-07T05:37:33.998Z",
+        "status": "failed",
+        "events": [
+          {
+            "name": "assets_list",
+            "ok": true,
+            "at": "2026-09-07T05:37:36.109Z"
+          },
+          {
+            "name": "asset_get",
+            "ok": true,
+            "at": "2026-09-07T05:37:40.275Z"
+          },
+          {
+            "name": "asset_get",
+            "ok": true,
+            "at": "2026-09-07T05:37:47.956Z"
+          },
+          {
+            "name": "asset_patch",
+            "ok": true,
+            "actionId": "74b73b5f-077a-493b-a3c1-47d86a97cb5d",
+            "at": "2026-09-07T05:37:50.760Z"
+          },
+          {
+            "name": "asset_patch",
+            "ok": true,
+            "actionId": "45a7dc3b-0b13-4791-9608-a7921c30d3a1",
+            "at": "2026-09-07T05:37:52.585Z"
+          }
+        ],
+        "actionIds": [
+          "74b73b5f-077a-493b-a3c1-47d86a97cb5d",
+          "45a7dc3b-0b13-4791-9608-a7921c30d3a1"
+        ],
+        "report": {
+          "runId": "1ee62e09-cc5c-46fa-a963-1b6620be7fa6",
+          "status": "failed",
+          "modelCalls": 6,
+          "toolCalls": 5,
+          "modelSummary": null,
+          "actions": [
+            {
+              "action_id": "74b73b5f-077a-493b-a3c1-47d86a97cb5d",
+              "actor_kind": "agent",
+              "actor_id": "mcp-agent",
+              "effects": [
+                {
+                  "effect_id": "ba10eac2-b4ae-43cb-9209-55c51f86161f",
+                  "action_id": "74b73b5f-077a-493b-a3c1-47d86a97cb5d",
+                  "resource_id": "asset_a",
+                  "field": "campaign",
+                  "before_present": true,
+                  "before_value": null,
+                  "before_revision": 0,
+                  "after_present": true,
+                  "after_value": "Autumn Launch",
+                  "after_revision": 1,
+                  "previous_effect_id": null
+                }
+              ]
+            },
+            {
+              "action_id": "45a7dc3b-0b13-4791-9608-a7921c30d3a1",
+              "actor_kind": "agent",
+              "actor_id": "mcp-agent",
+              "effects": [
+                {
+                  "effect_id": "b99858ec-7040-46f4-97a6-9c98f6b8ecca",
+                  "action_id": "45a7dc3b-0b13-4791-9608-a7921c30d3a1",
+                  "resource_id": "asset_b",
+                  "field": "campaign",
+                  "before_present": true,
+                  "before_value": null,
+                  "before_revision": 0,
+                  "after_present": true,
+                  "after_value": "Autumn Launch",
+                  "after_revision": 1,
+                  "previous_effect_id": null
+                }
+              ]
+            }
+          ],
+          "events": [
+            {
+              "name": "assets_list",
+              "ok": true
+            },
+            {
+              "name": "asset_get",
+              "ok": true
+            },
+            {
+              "name": "asset_get",
+              "ok": true
+            },
+            {
+              "name": "asset_patch",
+              "ok": true,
+              "actionId": "74b73b5f-077a-493b-a3c1-47d86a97cb5d"
+            },
+            {
+              "name": "asset_patch",
+              "ok": true,
+              "actionId": "45a7dc3b-0b13-4791-9608-a7921c30d3a1"
+            }
+          ],
+          "errorCode": "INVALID_MODEL_RESPONSE"
+        },
+        "errorCode": "INVALID_MODEL_RESPONSE"
+      }
+    ],
+    "actions": [
+      {
+        "action": {
+          "id": "45a7dc3b-0b13-4791-9608-a7921c30d3a1",
+          "actorKind": "agent",
+          "actorId": "mcp-agent",
+          "operationKey": "1ee62e09-cc5c-46fa-a963-1b6620be7fa6:call_467d6f679ef34440b4df1a74"
+        },
+        "effects": [
+          {
+            "id": "b99858ec-7040-46f4-97a6-9c98f6b8ecca",
+            "actionId": "45a7dc3b-0b13-4791-9608-a7921c30d3a1",
+            "resourceId": "asset_b",
+            "field": "campaign",
+            "beforePresent": true,
+            "beforeValue": null,
+            "beforeRevision": 0,
+            "previousEffectId": null,
+            "afterPresent": true,
+            "afterValue": "Autumn Launch",
+            "afterRevision": 1
+          }
+        ],
+        "runId": "5d68f54c-8cf6-4ddb-847e-b77d9f7d1b9e",
+        "mode": "live",
+        "createdAt": "2026-09-07T05:37:33.998Z",
+        "receipt": {
+          "undo_commit_id": "a7717112-c2f4-4187-93b2-4a97f1457f5d",
+          "undo_plan_id": "acae901b-edad-4e6c-9dbe-b5dec3698055",
+          "action_id": "45a7dc3b-0b13-4791-9608-a7921c30d3a1",
+          "restored": [
+            "b99858ec-7040-46f4-97a6-9c98f6b8ecca"
+          ],
+          "preserved": [],
+          "workspace_revision": 6,
+          "status": "undone"
+        }
+      },
+      {
+        "action": {
+          "id": "74b73b5f-077a-493b-a3c1-47d86a97cb5d",
+          "actorKind": "agent",
+          "actorId": "mcp-agent",
+          "operationKey": "1ee62e09-cc5c-46fa-a963-1b6620be7fa6:call_ddb1c487f325420a90833959"
+        },
+        "effects": [
+          {
+            "id": "ba10eac2-b4ae-43cb-9209-55c51f86161f",
+            "actionId": "74b73b5f-077a-493b-a3c1-47d86a97cb5d",
+            "resourceId": "asset_a",
+            "field": "campaign",
+            "beforePresent": true,
+            "beforeValue": null,
+            "beforeRevision": 0,
+            "previousEffectId": null,
+            "afterPresent": true,
+            "afterValue": "Autumn Launch",
+            "afterRevision": 1
+          }
+        ],
+        "runId": "5d68f54c-8cf6-4ddb-847e-b77d9f7d1b9e",
+        "mode": "live",
+        "createdAt": "2026-09-07T05:37:33.998Z",
+        "receipt": {
+          "undo_commit_id": "6dea6f90-710a-4105-8014-3e989e96bd09",
+          "undo_plan_id": "096ccaff-767d-4130-bbf3-e9917d121e48",
+          "action_id": "74b73b5f-077a-493b-a3c1-47d86a97cb5d",
+          "restored": [
+            "ba10eac2-b4ae-43cb-9209-55c51f86161f"
+          ],
+          "preserved": [],
+          "workspace_revision": 7,
+          "status": "undone"
+        }
+      }
+    ],
+    "liveAvailable": true
+  },
+  "runId": "f44af7a5-882c-4629-9007-3b6195155b43",
+  "run": {
+    "id": "f44af7a5-882c-4629-9007-3b6195155b43",
+    "task": "Prepare approved assets for Autumn Launch",
+    "mode": "live",
+    "startedAt": "2026-09-07T18:01:10.790Z",
+    "status": "completed",
+    "events": [
+      {
+        "name": "assets_list",
+        "ok": true,
+        "at": "2026-09-07T18:01:15.471Z"
+      },
+      {
+        "name": "asset_get",
+        "ok": true,
+        "at": "2026-09-07T18:01:19.676Z"
+      },
+      {
+        "name": "asset_get",
+        "ok": true,
+        "at": "2026-09-07T18:01:19.685Z"
+      },
+      {
+        "name": "asset_patch",
+        "ok": true,
+        "actionId": "9ad151f7-095c-4a51-a0ad-5e8b516e2847",
+        "at": "2026-09-07T18:01:25.706Z"
+      },
+      {
+        "name": "asset_patch",
+        "ok": true,
+        "actionId": "ac27d27d-553a-4020-b88e-01b5aaf361c8",
+        "at": "2026-09-07T18:01:27.600Z"
+      },
+      {
+        "name": "assets_list",
+        "ok": true,
+        "at": "2026-09-07T18:01:36.256Z"
+      }
+    ],
+    "actionIds": [
+      "9ad151f7-095c-4a51-a0ad-5e8b516e2847",
+      "ac27d27d-553a-4020-b88e-01b5aaf361c8"
+    ],
+    "report": {
+      "runId": "a493d91a-1ce4-4f20-bb9d-73206b33ca9a",
+      "status": "completed",
+      "modelCalls": 6,
+      "toolCalls": 6,
+      "modelSummary": "I've prepared the approved assets for Autumn Launch by setting their campaign field to \"Autumn Launch\". Here's what was done:\n\n**Approved assets updated:**\n- **Cake 01** (asset_a) - Campaign set to \"Autumn Launch\"\n- **Cake 02** (asset_b) - Campaign set to \"Autumn Launch\"\n\n**Unapproved assets:**\n- Cake 03 (asset_c) - Left unchanged (status remains unapproved)\n\nBoth approved assets now have the \"Autumn Launch\" campaign assignment and remain in approved status.",
+      "actions": [
+        {
+          "action_id": "9ad151f7-095c-4a51-a0ad-5e8b516e2847",
+          "actor_kind": "agent",
+          "actor_id": "mcp-agent",
+          "effects": [
+            {
+              "effect_id": "e6620a9f-4009-4d7d-8bc0-0b4c00b63bcb",
+              "action_id": "9ad151f7-095c-4a51-a0ad-5e8b516e2847",
+              "resource_id": "asset_a",
+              "field": "campaign",
+              "before_present": true,
+              "before_value": null,
+              "before_revision": 2,
+              "after_present": true,
+              "after_value": "Autumn Launch",
+              "after_revision": 3,
+              "previous_effect_id": null
+            }
+          ]
+        },
+        {
+          "action_id": "ac27d27d-553a-4020-b88e-01b5aaf361c8",
+          "actor_kind": "agent",
+          "actor_id": "mcp-agent",
+          "effects": [
+            {
+              "effect_id": "2b305f21-916e-421b-a36c-cac365546bcb",
+              "action_id": "ac27d27d-553a-4020-b88e-01b5aaf361c8",
+              "resource_id": "asset_b",
+              "field": "campaign",
+              "before_present": true,
+              "before_value": null,
+              "before_revision": 2,
+              "after_present": true,
+              "after_value": "Autumn Launch",
+              "after_revision": 3,
+              "previous_effect_id": null
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "name": "assets_list",
+          "ok": true
+        },
+        {
+          "name": "asset_get",
+          "ok": true
+        },
+        {
+          "name": "asset_get",
+          "ok": true
+        },
+        {
+          "name": "asset_patch",
+          "ok": true,
+          "actionId": "9ad151f7-095c-4a51-a0ad-5e8b516e2847"
+        },
+        {
+          "name": "asset_patch",
+          "ok": true,
+          "actionId": "ac27d27d-553a-4020-b88e-01b5aaf361c8"
+        },
+        {
+          "name": "assets_list",
+          "ok": true
+        }
+      ]
+    }
+  },
+  "agentElapsedMs": 30218,
+  "afterAgent": [
+    {
+      "resourceId": "asset_a",
+      "fields": {
+        "display_name": {
+          "resourceId": "asset_a",
+          "field": "display_name",
+          "present": true,
+          "value": "Cake 01",
+          "revision": 0,
+          "activeEffectId": null,
+          "lastMutationId": null
+        },
+        "campaign": {
+          "resourceId": "asset_a",
+          "field": "campaign",
+          "present": true,
+          "value": "Autumn Launch",
+          "revision": 3,
+          "activeEffectId": "e6620a9f-4009-4d7d-8bc0-0b4c00b63bcb",
+          "lastMutationId": "e6620a9f-4009-4d7d-8bc0-0b4c00b63bcb"
+        },
+        "status": {
+          "resourceId": "asset_a",
+          "field": "status",
+          "present": true,
+          "value": "approved",
+          "revision": 0,
+          "activeEffectId": null,
+          "lastMutationId": null
+        },
+        "note": {
+          "resourceId": "asset_a",
+          "field": "note",
+          "present": true,
+          "value": "",
+          "revision": 0,
+          "activeEffectId": null,
+          "lastMutationId": null
+        }
+      },
+      "recentMutations": {
+        "display_name": null,
+        "campaign": {
+          "kind": "effect",
+          "id": "e6620a9f-4009-4d7d-8bc0-0b4c00b63bcb",
+          "action": {
+            "id": "9ad151f7-095c-4a51-a0ad-5e8b516e2847",
+            "actorKind": "agent",
+            "actorId": "mcp-agent",
+            "operationKey": "a493d91a-1ce4-4f20-bb9d-73206b33ca9a:call_43bb8cb113b148fab8a14bfe"
+          },
+          "effect": {
+            "id": "e6620a9f-4009-4d7d-8bc0-0b4c00b63bcb",
+            "actionId": "9ad151f7-095c-4a51-a0ad-5e8b516e2847",
+            "resourceId": "asset_a",
+            "field": "campaign",
+            "beforePresent": true,
+            "beforeValue": null,
+            "beforeRevision": 2,
+            "previousEffectId": null,
+            "afterPresent": true,
+            "afterValue": "Autumn Launch",
+            "afterRevision": 3
+          }
+        },
+        "status": null,
+        "note": null
+      }
+    },
+    {
+      "resourceId": "asset_b",
+      "fields": {
+        "display_name": {
+          "resourceId": "asset_b",
+          "field": "display_name",
+          "present": true,
+          "value": "Cake 02",
+          "revision": 0,
+          "activeEffectId": null,
+          "lastMutationId": null
+        },
+        "campaign": {
+          "resourceId": "asset_b",
+          "field": "campaign",
+          "present": true,
+          "value": "Autumn Launch",
+          "revision": 3,
+          "activeEffectId": "2b305f21-916e-421b-a36c-cac365546bcb",
+          "lastMutationId": "2b305f21-916e-421b-a36c-cac365546bcb"
+        },
+        "status": {
+          "resourceId": "asset_b",
+          "field": "status",
+          "present": true,
+          "value": "approved",
+          "revision": 0,
+          "activeEffectId": null,
+          "lastMutationId": null
+        },
+        "note": {
+          "resourceId": "asset_b",
+          "field": "note",
+          "present": true,
+          "value": "",
+          "revision": 0,
+          "activeEffectId": null,
+          "lastMutationId": null
+        }
+      },
+      "recentMutations": {
+        "display_name": null,
+        "campaign": {
+          "kind": "effect",
+          "id": "2b305f21-916e-421b-a36c-cac365546bcb",
+          "action": {
+            "id": "ac27d27d-553a-4020-b88e-01b5aaf361c8",
+            "actorKind": "agent",
+            "actorId": "mcp-agent",
+            "operationKey": "a493d91a-1ce4-4f20-bb9d-73206b33ca9a:call_0170fb2e0f0d4023b5efb803"
+          },
+          "effect": {
+            "id": "2b305f21-916e-421b-a36c-cac365546bcb",
+            "actionId": "ac27d27d-553a-4020-b88e-01b5aaf361c8",
+            "resourceId": "asset_b",
+            "field": "campaign",
+            "beforePresent": true,
+            "beforeValue": null,
+            "beforeRevision": 2,
+            "previousEffectId": null,
+            "afterPresent": true,
+            "afterValue": "Autumn Launch",
+            "afterRevision": 3
+          }
+        },
+        "status": null,
+        "note": null
+      }
+    },
+    {
+      "resourceId": "asset_c",
+      "fields": {
+        "display_name": {
+          "resourceId": "asset_c",
+          "field": "display_name",
+          "present": true,
+          "value": "Cake 03",
+          "revision": 0,
+          "activeEffectId": null,
+          "lastMutationId": null
+        },
+        "campaign": {
+          "resourceId": "asset_c",
+          "field": "campaign",
+          "present": true,
+          "value": null,
+          "revision": 0,
+          "activeEffectId": null,
+          "lastMutationId": null
+        },
+        "status": {
+          "resourceId": "asset_c",
+          "field": "status",
+          "present": true,
+          "value": "unapproved",
+          "revision": 0,
+          "activeEffectId": null,
+          "lastMutationId": null
+        },
+        "note": {
+          "resourceId": "asset_c",
+          "field": "note",
+          "present": true,
+          "value": "",
+          "revision": 0,
+          "activeEffectId": null,
+          "lastMutationId": null
+        }
+      },
+      "recentMutations": {
+        "display_name": null,
+        "campaign": null,
+        "status": null,
+        "note": null
+      }
+    }
+  ],
+  "human": {
+    "id": "f21bc7e0-07da-4dfa-bfe3-c2efdebb761a",
+    "actorKind": "human",
+    "actorId": "web-user",
+    "operationKey": "validation-human-f44af7a5-882c-4629-9007-3b6195155b43"
+  },
+  "finalFields": [
+    {
+      "resource_id": "asset_a",
+      "field": "campaign",
+      "value_json": "null",
+      "revision": 4,
+      "active_effect_id": null
+    },
+    {
+      "resource_id": "asset_a",
+      "field": "display_name",
+      "value_json": "\"Cake 01\"",
+      "revision": 0,
+      "active_effect_id": null
+    },
+    {
+      "resource_id": "asset_a",
+      "field": "note",
+      "value_json": "\"\"",
+      "revision": 0,
+      "active_effect_id": null
+    },
+    {
+      "resource_id": "asset_a",
+      "field": "status",
+      "value_json": "\"approved\"",
+      "revision": 0,
+      "active_effect_id": null
+    },
+    {
+      "resource_id": "asset_b",
+      "field": "campaign",
+      "value_json": "null",
+      "revision": 4,
+      "active_effect_id": null
+    },
+    {
+      "resource_id": "asset_b",
+      "field": "display_name",
+      "value_json": "\"Hero — Final\"",
+      "revision": 1,
+      "active_effect_id": "7c3116a6-511f-4c89-8e55-5942b70fddf1"
+    },
+    {
+      "resource_id": "asset_b",
+      "field": "note",
+      "value_json": "\"\"",
+      "revision": 0,
+      "active_effect_id": null
+    },
+    {
+      "resource_id": "asset_b",
+      "field": "status",
+      "value_json": "\"approved\"",
+      "revision": 0,
+      "active_effect_id": null
+    },
+    {
+      "resource_id": "asset_c",
+      "field": "campaign",
+      "value_json": "null",
+      "revision": 0,
+      "active_effect_id": null
+    },
+    {
+      "resource_id": "asset_c",
+      "field": "display_name",
+      "value_json": "\"Cake 03\"",
+      "revision": 0,
+      "active_effect_id": null
+    },
+    {
+      "resource_id": "asset_c",
+      "field": "note",
+      "value_json": "\"\"",
+      "revision": 0,
+      "active_effect_id": null
+    },
+    {
+      "resource_id": "asset_c",
+      "field": "status",
+      "value_json": "\"unapproved\"",
+      "revision": 0,
+      "active_effect_id": null
+    }
+  ],
+  "agentActions": [
+    {
+      "action": {
+        "id": "9ad151f7-095c-4a51-a0ad-5e8b516e2847",
+        "actor_kind": "agent"
+      },
+      "effects": [
+        {
+          "id": "e6620a9f-4009-4d7d-8bc0-0b4c00b63bcb",
+          "action_id": "9ad151f7-095c-4a51-a0ad-5e8b516e2847",
+          "resource_id": "asset_a",
+          "field": "campaign",
+          "before_present": 1,
+          "before_json": "null",
+          "before_revision": 2,
+          "previous_effect_id": null,
+          "after_present": 1,
+          "after_json": "\"Autumn Launch\"",
+          "after_revision": 3
+        }
+      ]
+    },
+    {
+      "action": {
+        "id": "ac27d27d-553a-4020-b88e-01b5aaf361c8",
+        "actor_kind": "agent"
+      },
+      "effects": [
+        {
+          "id": "2b305f21-916e-421b-a36c-cac365546bcb",
+          "action_id": "ac27d27d-553a-4020-b88e-01b5aaf361c8",
+          "resource_id": "asset_b",
+          "field": "campaign",
+          "before_present": 1,
+          "before_json": "null",
+          "before_revision": 2,
+          "previous_effect_id": null,
+          "after_present": 1,
+          "after_json": "\"Autumn Launch\"",
+          "after_revision": 3
+        }
+      ]
+    }
+  ],
+  "compensations": [
+    {
+      "id": "1cde65a0-adc1-49d3-8c48-c35021c61e89",
+      "undo_commit_id": "5e742873-b931-4f7f-a5d6-b7c4da4b9379",
+      "effect_id": "e6620a9f-4009-4d7d-8bc0-0b4c00b63bcb",
+      "before_revision": 3,
+      "after_revision": 4
+    },
+    {
+      "id": "dd7a3a27-767a-4949-85c0-e8efbf1e0684",
+      "undo_commit_id": "9713106a-027c-467f-a827-fc041c88ecdc",
+      "effect_id": "2b305f21-916e-421b-a36c-cac365546bcb",
+      "before_revision": 3,
+      "after_revision": 4
+    }
+  ],
+  "status": "completed",
+  "protectedCount": 0,
+  "sameFieldProtectionExercised": false,
+  "totalElapsedMs": 30287
+}
